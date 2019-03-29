@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(void)
+{
+int year;
+printf("請輸入一個西元年份");
+scanf("%d",&year);
+if((year%4)==0 && (year%100)!=0) 
+printf("是閏年\n");
+else
+printf("不是閏年");
+system("pause");
+return 0;	
+}
